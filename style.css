@@ -16,8 +16,9 @@ body {
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
+    margin-right: calc((100% - 200px - 320.98px) / 2);
 }
 
 .logo img{
@@ -28,8 +29,8 @@ body {
 nav {
     position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    height: 140px;
     padding: 20px;
     z-index: 10;
 }
@@ -37,10 +38,9 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
+    padding: 20px;
+    margin: 0;
+    gap: 20px;
 }
 
 nav a {
@@ -54,6 +54,8 @@ nav a {
 .search {
     position: relative;
     height: 50px;
+    margin-left: auto;
+    overflow: hidden;
 }
 
 .search .input {
@@ -61,10 +63,9 @@ nav a {
     border: 0;
     font-size: 18px;
     padding: 15px;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     transition: width  0.3s ease;
-
 }
 
 .btn {
@@ -75,8 +76,8 @@ nav a {
     position: absolute;
     top: 0;
     left: 0;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     transition: transform 0.3s ease;
 }
 
@@ -86,11 +87,11 @@ nav a {
 }
 
 .search.active .input {
-    width: 200px
+    width: 238px
 }
 
 .search.active .btn {
-    transform: translateX(148px);
+    transform: translateX(198px);
 }
 
 .search img {
@@ -175,4 +176,49 @@ nav a {
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 860px) {
+    nav a {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-right: calc((100% - 120px - 240.65px) / 2);
+    }
+    
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .search {
+        padding-top: 8px;
+    }
+
+    .btn {
+        margin-top: 8px;
+    }
+
+    .search .input {
+        font-size: 14px;
+        padding: 8px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .search.active .input {
+        width: 100px;
+    }
+
+    .btn {
+        height: 30px;
+        width: 30px;
+    }
+
+    .search.active .btn {
+        transform: translateX(70px);
+    }
 }
