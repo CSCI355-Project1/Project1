@@ -68,7 +68,7 @@ nav a {
     transition: width  0.3s ease;
 }
 
-.btn {
+.search .btn {
     background-color: #fff;
     border: 0;
     cursor: pointer;
@@ -81,7 +81,7 @@ nav a {
     transition: transform 0.3s ease;
 }
 
-.btn:focus, 
+.search .btn:focus, 
 .input:focus {
     outline: none;
 }
@@ -198,8 +198,10 @@ nav a {
         padding-top: 8px;
     }
 
-    .btn {
+    .search .btn {
         margin-top: 8px;
+        height: 30px;
+        width: 30px;
     }
 
     .search .input {
@@ -211,11 +213,6 @@ nav a {
 
     .search.active .input {
         width: 100px;
-    }
-
-    .btn {
-        height: 30px;
-        width: 30px;
     }
 
     .search.active .btn {
