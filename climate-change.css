@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #007BFF;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.header h1.hover-title {
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+.header h1.hover-title:hover {
+    color: #FF7F50;
+}
+
+.global-warming-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.timeline-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-description {
+    text-align: left;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.image-description img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image-description img:hover {
+    transform: scale(1.05);
+}
+
+.interactive-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#reveal-facts-btn, .interactive-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#reveal-facts-btn:hover {
+    background-color: #218838;
+}
+
+.facts-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
