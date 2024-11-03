@@ -65,7 +65,7 @@ nav a {
     padding: 15px;
     height: 40px;
     width: 40px;
-    transition: width  0.3s ease;
+    transition: width 0.3s ease;
 }
 
 .search .btn {
@@ -128,7 +128,7 @@ nav a {
 
 .container {
     position: relative;
-    margin-top: 270px;
+    margin-top: 260px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -159,10 +159,14 @@ nav a {
     min-width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    color: #699e3c;
+    color: #1b4332;
     flex-grow: 1;
     font-size: 24px;
     font-weight: 560;
+}
+
+.content p {
+    color: #699e3c;
 }
 
 .content img {
