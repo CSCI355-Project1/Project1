@@ -7,11 +7,29 @@
     <link rel="stylesheet" href="climate-change.css">
 </head>
 <body>
-
-    <!-- Header Section with Title -->
-    <header class="header">
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="assets/logo.png" alt="logo"></a>
+            </div>
+            <ul>
+                <li><a href="wildlife.html">Wildlife</a></li>
+                <li><a href="climate-change.html">Climate</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" class="input" placeholder="Search...">
+                <button class="btn">
+                    <img src="assets/search-alt-1-svgrepo-com.svg" alt="search">
+                </button>
+            </div>
+        </nav>
+    </div>
+    <!--Title -->
+    <div class="title">
+        <div class="title-image"></div>
         <h1 class="hover-title">Climate Change Impact</h1>
-    </header>
+    </div>
 
     <!-- Global Warming Trends Section -->
     <div class="global-warming-section">
@@ -61,7 +79,9 @@
             <button onclick="toggleFacts()">Close</button>
         </div>
     </div>
-
+    <div class="footer">
+        <p>&copy; 2024 Osvaldo Talavera, Rakib Shahid, Sameer Ahmad Muzafar, Luis Rodriguez, Kunsang Tsering</p>
+    </div>
     <!-- Linking JavaScript File -->
     <script src="climate-change.js"></script>
 </body>
